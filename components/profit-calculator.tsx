@@ -1,7 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import sdk from "@farcaster/miniapp-sdk"
+import { useState } from "react"
 
 interface CalculationResult {
   profit: number
@@ -16,10 +15,6 @@ export function ProfitCalculator() {
   const [fees, setFees] = useState("")
   const [result, setResult] = useState<CalculationResult | null>(null)
   const [isCalculated, setIsCalculated] = useState(false)
-
-  useEffect(() => {
-    sdk.actions.ready()
-  }, [])
 
   const calculateProfit = () => {
     const buy = parseFloat(buyPrice)
