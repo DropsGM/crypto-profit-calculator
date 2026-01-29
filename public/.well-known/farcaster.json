@@ -12,6 +12,7 @@
     "homeUrl": "APP_URL",
     "iconUrl": "APP_URL/icon.png",
     "splashImageUrl": "APP_URL/splash.png",
+    "screenshotUrl": "APP_URL/screenshot.png",
     "splashBackgroundColor": "#000000",
     "primaryCategory": "utility",
     "tags": ["miniapp", "crypto", "calculator", "profit"],
