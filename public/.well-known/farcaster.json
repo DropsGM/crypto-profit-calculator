@@ -1,0 +1,20 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Crypto Profit Calculator",
+    "subtitle": "Calculate your crypto gains",
+    "description": "A minimalist profit calculator for tracking your crypto investments and returns",
+    "homeUrl": "APP_URL",
+    "iconUrl": "APP_URL/icon.png",
+    "splashImageUrl": "APP_URL/splash.png",
+    "splashBackgroundColor": "#000000",
+    "primaryCategory": "utility",
+    "tags": ["miniapp", "crypto", "calculator", "profit"],
+    "noindex": false
+  }
+}
