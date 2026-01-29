@@ -27,6 +27,17 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.png',
   },
+  other: {
+    'fc:frame': 'vNext',
+    'fc:frame:image': '/preview.png',
+    'fc:frame:image:aspect_ratio': '3:2',
+    'fc:frame:button:1': 'Open App',
+    'fc:frame:button:1:action': 'launch_frame',
+    'fc:frame:button:1:target': 'APP_URL',
+    'of:accepts:farcaster': 'vNext',
+    'fc:miniapp:splash_image_url': '/splash.png',
+    'fc:miniapp:splash_background_color': '#000000',
+  },
 }
 
 export default function RootLayout({
