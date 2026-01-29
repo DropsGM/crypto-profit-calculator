@@ -33,10 +33,11 @@ export const metadata: Metadata = {
     'fc:frame:image:aspect_ratio': '3:2',
     'fc:frame:button:1': 'Open App',
     'fc:frame:button:1:action': 'launch_frame',
-    'fc:frame:button:1:target': 'APP_URL',
+    'fc:frame:button:1:target': 'https://v0-crypto-profit-calculator-eta.vercel.app',
     'of:accepts:farcaster': 'vNext',
     'fc:miniapp:splash_image_url': '/splash.png',
     'fc:miniapp:splash_background_color': '#000000',
+    'base:app_id': '697b57a77a620235c741a8ee',
   },
 }
 
