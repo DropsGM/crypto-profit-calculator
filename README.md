@@ -1,47 +1,40 @@
 # Crypto Profit Calculator
 
-A simple and fast crypto profit calculator that helps users quickly estimate profit or loss from a trade.
+A simple crypto profit calculator to quickly estimate profit or loss from crypto trades.
 
-The app is designed with a clean UI and works smoothly on mobile devices, making it suitable for quick calculations without any distractions.
+This tool is designed for fast use with a clean interface. It works well on mobile and desktop browsers and does not require login or wallet connection.
 
 ---
 
 ## Features
 
-- Calculate crypto profit or loss instantly
-- Input buy price and sell price
-- Enter total investment amount
+- Profit and loss calculation
+- Buy price input
+- Sell price input
+- Investment amount input
 - Optional fee input
-- Clear and simple results
-- Mobile-friendly dark UI
-- No wallet connection required
-- No data storage or tracking
+- Instant calculation
+- Clean dark UI
+- Mobile-friendly design
+- No wallet connection
+- No data storage
 
 ---
 
 ## How It Works
 
-1. Enter the **Buy Price**
-2. Enter the **Sell Price**
-3. Enter the **Investment Amount**
-4. (Optional) Add trading **Fees**
-5. Click **Calculate**
-6. Instantly see your profit or loss
+1. Enter the buy price
+2. Enter the sell price
+3. Enter the investment amount
+4. Add fees if applicable
+5. Click the calculate button
+6. View profit or loss instantly
 
 ---
 
-## Use Cases
+## Live App
 
-- Quick profit/loss check before selling
-- Estimating returns on past trades
-- Educational use for beginners
-- Simple calculator for crypto traders
-
----
-
-## Live Demo
-
-https://calculator-eta.vercel.app
+[Open the app](https://calculator-eta.vercel.app)
 
 ---
 
@@ -50,25 +43,23 @@ https://calculator-eta.vercel.app
 - Next.js
 - React
 - Tailwind CSS
-- Deployed on Vercel
+- Vercel deployment
 
 ---
 
 ## Privacy
 
-- No user data is collected
-- No login or wallet connection
-- All calculations happen locally in the browser
+- No personal data is collected
+- No login or signup required
+- All calculations are done locally in the browser
 
 ---
 
 ## Disclaimer
 
 This tool is for informational purposes only.  
-It does not provide financial advice.
+It does not provide financial or investment advice.
 
 ---
 
-## Author
-
-Built by an independent developer.
+Built by [Drops](https://x.com/dropsgm)
