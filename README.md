@@ -34,7 +34,7 @@ This tool is designed for fast use with a clean interface. It works well on mobi
 
 ## Live App
 
-[Open the app](https://calculator-eta.vercel.app)
+[Open the app](https://v0-crypto-profit-calculator-eta.vercel.app/)
 
 ---
 
