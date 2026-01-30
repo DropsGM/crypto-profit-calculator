@@ -1,30 +1,74 @@
-# Crypto profit calculator
+# Crypto Profit Calculator
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A simple and fast crypto profit calculator that helps users quickly estimate profit or loss from a trade.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/kingfiser8-4856s-projects/v0-crypto-profit-calculator)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/uSM6EDmWlOr)
+The app is designed with a clean UI and works smoothly on mobile devices, making it suitable for quick calculations without any distractions.
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Features
 
-## Deployment
+- Calculate crypto profit or loss instantly
+- Input buy price and sell price
+- Enter total investment amount
+- Optional fee input
+- Clear and simple results
+- Mobile-friendly dark UI
+- No wallet connection required
+- No data storage or tracking
 
-Your project is live at:
-
-**[https://vercel.com/kingfiser8-4856s-projects/v0-crypto-profit-calculator](https://vercel.com/kingfiser8-4856s-projects/v0-crypto-profit-calculator)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/uSM6EDmWlOr](https://v0.app/chat/uSM6EDmWlOr)**
+---
 
 ## How It Works
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+1. Enter the **Buy Price**
+2. Enter the **Sell Price**
+3. Enter the **Investment Amount**
+4. (Optional) Add trading **Fees**
+5. Click **Calculate**
+6. Instantly see your profit or loss
+
+---
+
+## Use Cases
+
+- Quick profit/loss check before selling
+- Estimating returns on past trades
+- Educational use for beginners
+- Simple calculator for crypto traders
+
+---
+
+## Live Demo
+
+https://calculator-eta.vercel.app
+
+---
+
+## Tech Stack
+
+- Next.js
+- React
+- Tailwind CSS
+- Deployed on Vercel
+
+---
+
+## Privacy
+
+- No user data is collected
+- No login or wallet connection
+- All calculations happen locally in the browser
+
+---
+
+## Disclaimer
+
+This tool is for informational purposes only.  
+It does not provide financial advice.
+
+---
+
+## Author
+
+Built by an independent developer.
