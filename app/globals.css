@@ -4,25 +4,25 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #000000; /* Preserved from existing */
-  --foreground: #ffffff; /* Preserved from existing */
-  --card: #111111; /* Preserved from existing */
-  --card-foreground: #ffffff; /* Preserved from existing */
-  --popover: #111111; /* Preserved from existing */
-  --popover-foreground: #ffffff; /* Preserved from existing */
+  --background: #ffffff; /* Light background */
+  --foreground: #000000; /* Light foreground text */
+  --card: #f5f5f5; /* Light card background */
+  --card-foreground: #000000; /* Light card text */
+  --popover: #ffffff; /* Light popover background */
+  --popover-foreground: #000000; /* Light popover text */
   --primary: #0052FF; /* Preserved from existing */
   --primary-foreground: #ffffff; /* Preserved from existing */
-  --secondary: #1a1a1a; /* Preserved from existing */
-  --secondary-foreground: #ffffff; /* Preserved from existing */
-  --muted: #222222; /* Preserved from existing */
-  --muted-foreground: #888888; /* Preserved from existing */
+  --secondary: #e5e5e5; /* Light secondary background */
+  --secondary-foreground: #000000; /* Light secondary text */
+  --muted: #9ca3af; /* Light muted */
+  --muted-foreground: #666666; /* Light muted text */
   --accent: #0052FF; /* Preserved from existing */
   --accent-foreground: #ffffff; /* Preserved from existing */
-  --destructive: #EF4444; /* Preserved from existing */
+  --destructive: #dc2626; /* Preserved from existing */
   --destructive-foreground: #ffffff; /* Preserved from existing */
-  --success: #22C55E; /* Preserved from existing */
-  --border: #222222; /* Preserved from existing */
-  --input: #222222; /* Preserved from existing */
+  --success: #16a34a; /* Preserved from existing */
+  --border: #d1d5db; /* Light border */
+  --input: #f3f4f6; /* Light input background */
   --ring: #0052FF; /* Preserved from existing */
   --radius: 0.5rem; /* Preserved from existing */
 
@@ -44,25 +44,26 @@
 
 /* Entire .dark block added from shadcn/ui default, as it was missing */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
+  --background: #000000; /* Dark background */
+  --foreground: #ffffff; /* Dark foreground text */
+  --card: #111111; /* Dark card background */
+  --card-foreground: #ffffff; /* Dark card text */
+  --popover: #111111; /* Dark popover background */
+  --popover-foreground: #ffffff; /* Dark popover text */
+  --primary: #0052FF; /* Preserved from existing */
+  --primary-foreground: #ffffff; /* Preserved from existing */
+  --secondary: #1a1a1a; /* Dark secondary background */
+  --secondary-foreground: #ffffff; /* Dark secondary text */
+  --muted: #444444; /* Dark muted */
+  --muted-foreground: #888888; /* Dark muted text */
+  --accent: #0052FF; /* Preserved from existing */
+  --accent-foreground: #ffffff; /* Preserved from existing */
+  --destructive: #ef4444; /* Dark destructive */
+  --destructive-foreground: #ffffff; /* Dark destructive text */
+  --success: #22c55e; /* Dark success */
+  --border: #222222; /* Dark border */
+  --input: #1a1a1a; /* Dark input background */
+  --ring: #0052FF; /* Preserved from existing */
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
