@@ -1,12 +1,7 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
-import dynamic from 'next/dynamic'
-
-const Analytics = dynamic(
-  () => import('@vercel/analytics/next').then((mod) => mod.Analytics),
-  { ssr: false }
-)
+import { AnalyticsComponent } from '@/components/analytics'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -55,7 +50,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-sans antialiased bg-black text-white`}>
         {children}
-        <Analytics />
+        <AnalyticsComponent />
       </body>
     </html>
   )
