@@ -1,7 +1,12 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
+import dynamic from 'next/dynamic'
+
+const Analytics = dynamic(
+  () => import('@vercel/analytics/next').then((mod) => mod.Analytics),
+  { ssr: false }
+)
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
