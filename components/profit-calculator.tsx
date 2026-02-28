@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { ThemeToggle } from "./theme-toggle"
 
 interface CalculationResult {
   profit: number
@@ -50,43 +51,48 @@ export function ProfitCalculator() {
   const isFormValid = buyPrice && sellPrice && investment && parseFloat(buyPrice) > 0
 
   return (
-    <div className="min-h-screen bg-black px-4 py-6 flex flex-col">
-      {/* Header */}
-      <header className="text-center mb-8">
-        <div className="flex items-center justify-center gap-2 mb-2">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 111 111"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="text-[#0052FF]"
-          >
-            <path
-              d="M54.921 110.034C85.359 110.034 110.034 85.402 110.034 55.017C110.034 24.6319 85.359 0 54.921 0C26.0432 0 2.35281 22.1714 0 50.3923H72.8467V59.6416H0C2.35281 87.8625 26.0432 110.034 54.921 110.034Z"
-              fill="currentColor"
-            />
-          </svg>
-          <h1 className="text-2xl font-semibold text-white tracking-tight">
-            Crypto Profit Calculator
-          </h1>
+    <div className="min-h-screen bg-background text-foreground px-4 py-6 flex flex-col">
+      {/* Header with Theme Toggle */}
+      <header className="flex items-center justify-between mb-8">
+        <div className="flex-1 text-center">
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 111 111"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="text-accent"
+            >
+              <path
+                d="M54.921 110.034C85.359 110.034 110.034 85.402 110.034 55.017C110.034 24.6319 85.359 0 54.921 0C26.0432 0 2.35281 22.1714 0 50.3923H72.8467V59.6416H0C2.35281 87.8625 26.0432 110.034 54.921 110.034Z"
+                fill="currentColor"
+              />
+            </svg>
+            <h1 className="text-2xl font-semibold tracking-tight">
+              Crypto Profit Calculator
+            </h1>
+          </div>
+          <p className="text-sm text-muted-foreground">Calculate your crypto gains</p>
         </div>
-        <p className="text-sm text-[#888888]">Calculate your crypto gains</p>
+        <div className="flex-shrink-0 ml-4">
+          <ThemeToggle />
+        </div>
       </header>
 
       {/* Calculator Card */}
       <div className="flex-1 max-w-md mx-auto w-full">
-        <div className="bg-[#111111] border border-[#222222] rounded-xl p-5 space-y-5">
+        <div className="bg-card border border-border rounded-xl p-5 space-y-5">
           {/* Buy Price */}
           <div className="space-y-2">
             <label
               htmlFor="buyPrice"
-              className="block text-sm text-[#888888] font-medium"
+              className="block text-sm text-muted-foreground font-medium"
             >
               Buy Price
             </label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#888888]">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground">
                 $
               </span>
               <input
@@ -96,7 +102,7 @@ export function ProfitCalculator() {
                 placeholder="0.00"
                 value={buyPrice}
                 onChange={(e) => setBuyPrice(e.target.value)}
-                className="w-full bg-[#1a1a1a] border border-[#222222] rounded-lg py-3 pl-8 pr-4 text-white text-lg font-medium placeholder:text-[#444444] focus:outline-none focus:border-[#0052FF] focus:ring-1 focus:ring-[#0052FF] transition-colors"
+                className="w-full bg-secondary border border-border rounded-lg py-3 pl-8 pr-4 text-foreground text-lg font-medium placeholder:text-muted transition-colors focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
               />
             </div>
           </div>
@@ -105,12 +111,12 @@ export function ProfitCalculator() {
           <div className="space-y-2">
             <label
               htmlFor="sellPrice"
-              className="block text-sm text-[#888888] font-medium"
+              className="block text-sm text-muted-foreground font-medium"
             >
               Sell Price
             </label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#888888]">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground">
                 $
               </span>
               <input
@@ -120,7 +126,7 @@ export function ProfitCalculator() {
                 placeholder="0.00"
                 value={sellPrice}
                 onChange={(e) => setSellPrice(e.target.value)}
-                className="w-full bg-[#1a1a1a] border border-[#222222] rounded-lg py-3 pl-8 pr-4 text-white text-lg font-medium placeholder:text-[#444444] focus:outline-none focus:border-[#0052FF] focus:ring-1 focus:ring-[#0052FF] transition-colors"
+                className="w-full bg-secondary border border-border rounded-lg py-3 pl-8 pr-4 text-foreground text-lg font-medium placeholder:text-muted transition-colors focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
               />
             </div>
           </div>
@@ -129,12 +135,12 @@ export function ProfitCalculator() {
           <div className="space-y-2">
             <label
               htmlFor="investment"
-              className="block text-sm text-[#888888] font-medium"
+              className="block text-sm text-muted-foreground font-medium"
             >
               Investment Amount
             </label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#888888]">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground">
                 $
               </span>
               <input
@@ -144,7 +150,7 @@ export function ProfitCalculator() {
                 placeholder="0.00"
                 value={investment}
                 onChange={(e) => setInvestment(e.target.value)}
-                className="w-full bg-[#1a1a1a] border border-[#222222] rounded-lg py-3 pl-8 pr-4 text-white text-lg font-medium placeholder:text-[#444444] focus:outline-none focus:border-[#0052FF] focus:ring-1 focus:ring-[#0052FF] transition-colors"
+                className="w-full bg-secondary border border-border rounded-lg py-3 pl-8 pr-4 text-foreground text-lg font-medium placeholder:text-muted transition-colors focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
               />
             </div>
           </div>
@@ -153,15 +159,15 @@ export function ProfitCalculator() {
           <div className="space-y-2">
             <label
               htmlFor="fees"
-              className="block text-sm text-[#888888] font-medium"
+              className="block text-sm text-muted-foreground font-medium"
             >
               Fees{" "}
-              <span className="text-[#555555] text-xs font-normal">
+              <span className="text-muted text-xs font-normal">
                 (Optional)
               </span>
             </label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#888888]">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground">
                 $
               </span>
               <input
@@ -171,7 +177,7 @@ export function ProfitCalculator() {
                 placeholder="0.00"
                 value={fees}
                 onChange={(e) => setFees(e.target.value)}
-                className="w-full bg-[#1a1a1a] border border-[#222222] rounded-lg py-3 pl-8 pr-4 text-white text-lg font-medium placeholder:text-[#444444] focus:outline-none focus:border-[#0052FF] focus:ring-1 focus:ring-[#0052FF] transition-colors"
+                className="w-full bg-secondary border border-border rounded-lg py-3 pl-8 pr-4 text-foreground text-lg font-medium placeholder:text-muted transition-colors focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
               />
             </div>
           </div>
@@ -180,7 +186,7 @@ export function ProfitCalculator() {
           <button
             onClick={calculateProfit}
             disabled={!isFormValid}
-            className="w-full bg-[#0052FF] hover:bg-[#0047E1] disabled:bg-[#222222] disabled:text-[#555555] text-white font-semibold py-3.5 rounded-lg transition-colors mt-2 disabled:cursor-not-allowed"
+            className="w-full bg-accent hover:bg-accent/90 disabled:bg-muted disabled:text-muted-foreground text-accent-foreground font-semibold py-3.5 rounded-lg transition-colors mt-2 disabled:cursor-not-allowed"
           >
             Calculate
           </button>
@@ -191,17 +197,17 @@ export function ProfitCalculator() {
           <div
             className={`mt-5 border rounded-xl p-5 ${
               result.profit >= 0
-                ? "bg-[#22C55E]/10 border-[#22C55E]/30"
-                : "bg-[#EF4444]/10 border-[#EF4444]/30"
+                ? "bg-success/10 border-success/30"
+                : "bg-destructive/10 border-destructive/30"
             }`}
           >
             <div className="text-center space-y-3">
-              <p className="text-sm text-[#888888] font-medium uppercase tracking-wide">
+              <p className="text-sm text-muted-foreground font-medium uppercase tracking-wide">
                 {result.profit >= 0 ? "Estimated Profit" : "Estimated Loss"}
               </p>
               <p
                 className={`text-4xl font-bold tracking-tight ${
-                  result.profit >= 0 ? "text-[#22C55E]" : "text-[#EF4444]"
+                  result.profit >= 0 ? "text-success" : "text-destructive"
                 }`}
               >
                 {result.profit >= 0 ? "+" : ""}$
@@ -212,22 +218,22 @@ export function ProfitCalculator() {
               </p>
               <div className="flex items-center justify-center gap-4 pt-2">
                 <div className="text-center">
-                  <p className="text-xs text-[#666666] mb-0.5">Return</p>
+                  <p className="text-xs text-muted mb-0.5">Return</p>
                   <p
                     className={`text-sm font-semibold ${
                       result.percentageGain >= 0
-                        ? "text-[#22C55E]"
-                        : "text-[#EF4444]"
+                        ? "text-success"
+                        : "text-destructive"
                     }`}
                   >
                     {result.percentageGain >= 0 ? "+" : ""}
                     {result.percentageGain.toFixed(2)}%
                   </p>
                 </div>
-                <div className="w-px h-8 bg-[#333333]" />
+                <div className="w-px h-8 bg-border" />
                 <div className="text-center">
-                  <p className="text-xs text-[#666666] mb-0.5">Units</p>
-                  <p className="text-sm font-semibold text-white">
+                  <p className="text-xs text-muted mb-0.5">Units</p>
+                  <p className="text-sm font-semibold text-foreground">
                     {result.units.toLocaleString("en-US", {
                       maximumFractionDigits: 6,
                     })}
@@ -239,7 +245,7 @@ export function ProfitCalculator() {
             {/* Reset Button */}
             <button
               onClick={resetCalculator}
-              className="w-full mt-4 py-2.5 text-sm text-[#888888] hover:text-white border border-[#333333] hover:border-[#444444] rounded-lg transition-colors"
+              className="w-full mt-4 py-2.5 text-sm text-muted-foreground hover:text-foreground border border-border hover:border-muted rounded-lg transition-colors"
             >
               Reset
             </button>
@@ -249,7 +255,7 @@ export function ProfitCalculator() {
 
       {/* Footer */}
       <footer className="mt-8 text-center">
-        <p className="text-xs text-[#555555]">
+        <p className="text-xs text-muted">
           Built on Base • For educational purposes only
         </p>
       </footer>
