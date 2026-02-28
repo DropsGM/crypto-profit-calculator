@@ -12,6 +12,8 @@ export const viewport: Viewport = {
     { media: '(prefers-color-scheme: dark)', color: '#000000' },
   ],
 }
+
+export const metadata: Metadata = {
   title: 'Crypto Profit Calculator',
   description: 'Minimalist crypto profit calculator for Base',
   generator: 'v0.app',
